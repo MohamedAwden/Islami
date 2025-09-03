@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami/home/home_screen.dart';
+import 'package:islami/home/my_theme_data.dart';
 
 void main(){
   runApp(MyApp());
@@ -16,6 +17,8 @@ void main(){
           HomeScreen.routeName : (context)=>HomeScreen(),
         },
         initialRoute:HomeScreen.routeName ,
+        darkTheme: MyThemeData.darkTheme,
+        themeMode: ThemeMode.dark,
       );
     }
   }
